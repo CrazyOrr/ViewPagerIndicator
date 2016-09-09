@@ -1,6 +1,7 @@
 #Android generated
 bin
 gen
+/build
 
 #Eclipse
 .project
@@ -16,6 +17,9 @@ classes
 target
 release.properties
 pom.xml.*
+
+#Gradle
+.gradle
 
 #Command line
 local.properties
