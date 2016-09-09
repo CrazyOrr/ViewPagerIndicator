@@ -1,4 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.CrazyOrr'
 
 android {
     compileSdkVersion 24
@@ -7,7 +10,7 @@ android {
     defaultConfig {
         minSdkVersion 9
         targetSdkVersion 24
-        setProperty("archivesBaseName", "viewpagerindicator-$version")
+        setProperty("archivesBaseName", "viewpagerindicator")
     }
 
 //    buildTypes {
