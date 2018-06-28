@@ -15,8 +15,8 @@ buildscript {
 allprojects {
 //    group = 'com.viewpagerindicator'
     group = 'com.github.CrazyOrr'
-    version = '2.4.1'
-    ext.versionCode = 65
+    version = '2.4.2'
+    ext.versionCode = 66
 
     repositories {
         google()
