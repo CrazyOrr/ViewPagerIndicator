@@ -1,10 +1,11 @@
 buildscript {
     repositories {
+        google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        classpath 'com.android.tools.build:gradle:3.2.0-beta01'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -12,14 +13,24 @@ buildscript {
 }
 
 allprojects {
-    group = 'com.viewpagerindicator'
+//    group = 'com.viewpagerindicator'
+    group = 'com.github.CrazyOrr'
     version = '2.4.1'
+    ext.versionCode = 65
 
     repositories {
+        google()
         jcenter()
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    compileSdkVersion = 27
+    minSdkVersion = 14
+    targetSdkVersion = 27
+    supportLibsVersion = '27.1.1'
 }
